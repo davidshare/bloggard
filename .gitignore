@@ -27,6 +27,6 @@ node_modules/
 .vscode
 data
 wordpress
-wp-content/themes/custom-theme/dist
-wp-content/themes/custom-theme/packaged
+wp-content/themes/bloggard/dist
+wp-content/themes/bloggard/packaged
 
