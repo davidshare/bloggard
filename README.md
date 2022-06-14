@@ -1,5 +1,5 @@
-# custom-theme
+# bloggard
 A wordpress themes for creating blogs
 
 
-sudo chown -R $USER:$USER custom-theme/
+sudo chown -R $USER:$USER bloggard/
