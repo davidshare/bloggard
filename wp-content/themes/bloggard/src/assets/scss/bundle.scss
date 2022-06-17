@@ -1,12 +1,18 @@
+@import './settings/global';
+@import './settings/colours';
+@import './settings/break-points';
+@import './settings/typography';
+
+@import './tools/units';
+@import './tools/breakpoint';
+
 @import './generic/normalize';
 @import './generic/box-sizing';
 @import './generic/reset';
 
-
 /* 4 Elements */
 @import './elements/header';
 @import './elements/nav';
-@import './elements/footer';
 
 /* fontawesome */
 $fa-font-path: '../../../node_modules/@fortawesome/fontawesome-free/webfonts/';
@@ -16,4 +22,10 @@ $fa-font-path: '../../../node_modules/@fortawesome/fontawesome-free/webfonts/';
 
 
 /* Objects */
-@import './objects/container';
+@import './objects/_container';
+@import './objects/wp';
+@import './objects/grid';
+
+/* Components */
+@import './components/widget';
+@import './components/footer';
