@@ -7,21 +7,7 @@ $site_info = get_theme_mod('_themename_site_info', '');
   <div class="o-container">
     <div class="o-row">
       <div class="o-row__column o-row__column--span-12 c-site-info__text">
-        AllHome
-        Courses
-        Code Playground
-        Top Learners
-        Blog
-        Pro
-        FAQ
-        Contact
-        CareersWe're hiring
-        Terms of Use
-        Privacy Policy
-        Made with
-        by
-        Sololearn
-        | ©2022
+      <?php get_template_part( '/template-parts/menu/footer-menu' ); ?>
       </div>
     </div>
   </div>

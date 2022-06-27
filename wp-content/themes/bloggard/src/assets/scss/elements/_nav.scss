@@ -29,8 +29,8 @@ nav {
     }
   }
 
-  .menu-main-menu-container ul.menu  li ul{
-      display: none;
+  .menu-main-menu-container ul.menu li ul {
+    display: none;
   }
 }
 
@@ -122,6 +122,28 @@ nav.mobile-nav-closed {
   display: none;
 }
 
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  
+  ul {
+    display: flex;
+    flex-direction: row;
+
+    li a {
+      font-weight: bold;
+      padding: 5px 15px;
+      color: #979ea5;
+    }
+  }
+
+  .copyright,
+  .copyright a {
+    color: #979ea5;
+    font-weight: bold;
+  }
+}
+
 
 @media screen and (min-width: 960px) {
 
@@ -150,7 +172,7 @@ nav.mobile-nav-closed {
 
     }
 
-    .logo{
+    .logo {
       display: flex;
       justify-content: center;
       align-items: center;
