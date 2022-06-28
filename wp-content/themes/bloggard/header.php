@@ -7,7 +7,7 @@
  * @package _themename_
  */
 ?>
-
+ 
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 
