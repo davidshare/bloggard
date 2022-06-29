@@ -24,7 +24,7 @@ get_header();
             <?php _themename_display_post_thumbnail(get_the_post_thumbnail_url(), get_the_title()) ?>
           </figure>
           <div class="article-content">
-            <a href="#" class="article-category"><?php the_category(); ?></a>
+            <a href="#" class="article-category"><?php the_category(',');?></a>
             <h3 class="article-title"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title() ?></a></h3>
           </div>
         </article>
