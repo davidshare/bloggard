@@ -55,4 +55,11 @@ function _themename_readmore_link() {
   echo '</a>';
 }
 
-?>
+function _themename_display_post_thumbnail($thumbnail_url, $title){
+  if($thumbnail_url){
+    echo '<img src="'.$thumbnail_url.'" alt="article image">';
+  }
+  else{
+    echo '<p class="no-thumbnail">'. $title .'</p>';
+  }
+}

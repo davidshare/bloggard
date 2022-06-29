@@ -13,29 +13,21 @@
 get_header();
 ?>
 <?php if (have_posts()) { ?>
-  <main class="main container">
+  <main class="main o-container">
     <h2 class="section-title featured-posts-title">Articles</h2>
-    <div class="articles">
+    <div class="articles" id="articles">
       <?php while (have_posts()) { ?>
         <?php the_post() ?>
 
         <article class="article-card">
           <figure class="article-image">
-            <img src="./images/articles/article8.jpeg" alt="article image">
+            <?php _themename_display_post_thumbnail(get_the_post_thumbnail_url(), get_the_title()) ?>
           </figure>
           <div class="article-content">
-            <a href="#" class="article-category">CI/CD</a>
+            <a href="#" class="article-category"><?php the_category(); ?></a>
             <h3 class="article-title"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title() ?></a></h3>
           </div>
         </article>
-        <div>
-          <?php _themename_post_meta() ?>
-        </div>
-        <div>
-          <?php the_excerpt() ?>
-        </div>
-        <?php _themename_readmore_link() ?>
-
       <?php } ?>
     </div>
   </main>
