@@ -1,0 +1,55 @@
+{
+  "name": "bloggard",
+  "version": "1.0.0",
+  "description": " Highly responsive and customizable wordpress theme for creating blogs",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "build": "gulp build --prod",
+    "bundle": "gulp bundle --prod",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidshare/bloggard.git"
+  },
+  "keywords": [
+    "blogging",
+    "responsive",
+    "bloggard"
+  ],
+  "author": "David Essien",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidshare/bloggard/issues"
+  },
+  "homepage": "https://github.com/davidshare/bloggard#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.1.1",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@babel/register": "^7.16.0",
+    "babel-loader": "^8.2.3",
+    "browser-sync": "^2.27.7",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "7.1.0",
+    "gulp-replace": "^1.1.3",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-zip": "^5.1.0",
+    "sass": "^1.43.4",
+    "vinyl-named": "^1.1.0",
+    "webpack": "^5.62.1",
+    "webpack-stream": "^7.0.0",
+    "yargs": "^17.2.1"
+  }
+}
