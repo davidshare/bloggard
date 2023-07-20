@@ -1,0 +1,31 @@
+@use '../settings/_variables'as variables;
+
+.get-started-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: variables.$color-dark-blue3;  /* Updated color */
+  color: #FFFFFF;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.get-started-link:hover {
+  background-color: variables.$color-blue2; /* Change to a darker shade of your color for a hover effect */
+}
+
+.arrow-icon {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: variables.$color-dark-blue2; /* The color of the arrow, updated to match the button */
+}

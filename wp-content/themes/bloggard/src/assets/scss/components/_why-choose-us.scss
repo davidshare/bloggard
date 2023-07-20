@@ -1,0 +1,63 @@
+@use '../settings/_variables'as variables;
+
+.why-choose-us {
+  padding: 10rem 0;
+
+  &__heading {
+    font-size: 8vw;
+    margin-bottom: 1em;
+  }
+
+  &__description {
+    line-height: 1.5em;
+    margin-bottom: 3em;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 3em;
+
+    &__item {
+      padding: 1rem;
+      min-height: 300px;
+      background-color: variables.$color-white;
+      border-radius: 15px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease;
+
+      h2 {
+        font-size: 2em;
+        margin-bottom: 2rem;
+        line-height: 1;
+      }
+
+      &__description{
+        line-height: 1.5;
+        color: variables.$color-dark3;
+      }
+    }
+  }
+
+  @media screen and (min-width: variables.$breakpoint-medium) {
+    &__heading {
+      font-size: 4vw;
+    }
+
+    &__description {
+      margin-bottom: 6em;
+    }
+
+    &__grid {
+      &__item {
+        padding: 3rem;
+      }
+    }
+  }
+
+  @media screen and (min-width: variables.$breakpoint-large) {
+    &__grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

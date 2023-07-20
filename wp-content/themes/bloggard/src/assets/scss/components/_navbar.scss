@@ -1,0 +1,108 @@
+@use '../settings/_variables'as variables;
+
+.navbar {
+  position: fixed;
+  z-index: 400;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 5px 6px 0 rgba(0, 0, 0, .1);
+  padding: 1.5rem 2rem;
+  transition: all 0.5s ease;
+  background: variables.$color-white;
+
+  @media screen and (min-width: 800px) {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 10rem;
+  }
+
+  // Add a background color to the navbar when scrolled
+  &.scrolled {
+    background-color: variables.$color-white;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // Hide the checkbox for toggling the nav
+    &__toggle-menu {
+      display: none;
+    }
+
+    &__hamburger {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      @media screen and (min-width: 800px) {
+        display: none;
+      }
+
+      &-line {
+        width: 24px;
+        height: 3px;
+        margin: 2px;
+        background-color: variables.$color-black;
+        transition: transform 0.3s, opacity 0.3s;
+      }
+    }
+
+    &__toggle-menu:checked+.navbar__top__hamburger .navbar__top__hamburger-line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    &__toggle-menu:checked+.navbar__top__hamburger .navbar__top__hamburger-line:nth-child(2) {
+      opacity: 0;
+    }
+
+    &__toggle-menu:checked+.navbar__top__hamburger .navbar__top__hamburger-line:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    transition: all 0.4s ease;
+
+    &-image {
+      width: 30px;
+      transition: all 0.4s ease;
+    }
+  }
+
+  &__nav-content {
+    display: none;
+    height: 100vh;
+    padding: 2rem;
+
+    &>.navbar__links {
+      .navbar__link-item {
+        padding-bottom: 2rem;
+      }
+    }
+
+    @media screen and (min-width: 800px) {
+      display: flex;
+      padding: 0;
+      align-items: center;
+      max-height: 40px;
+
+      &>.navbar__links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+
+        .navbar__link-item {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+}

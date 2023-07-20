@@ -1,0 +1,94 @@
+@use '../settings/_variables'as variables;
+
+.contact {
+  background: variables.$color-white;
+  padding: 10rem 10vw;
+
+  &__title {
+    font-size: 8vw;
+    margin-bottom: 1em;
+  }
+
+  &__subhead {
+    font-size: 4vw;
+    color: variables.$color-orange2;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    &__image {
+      display: flex;
+      width: 100%;
+      min-height: 40vh;
+      background-image: url('../assets/images/african-woman-making-calls.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    &__form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 1em;
+
+      input,
+      textarea {
+        background-color: variables.$color-light;
+        font-size: 1.2em;
+        padding: 0.8em;
+        margin-bottom: 1.5em;
+        border: 1px solid variables.$color-light2;
+      }
+
+      label{
+        margin-bottom: 0.5em;
+        color: variables.$color-secondary;
+      }
+
+      textarea {
+        height: 10em;
+      }
+
+      .get-started-link {
+        background-color: variables.$color-orange2;
+        width: 70%;
+        align-self: center;
+        padding: 1em 0;
+        font-size: 1.2em;
+      }
+
+      .get-started-link:hover {
+        background-color: variables.$color-orange;
+      }
+    }
+  }
+}
+
+/* When the screen is 600px or more, switch to row layout */
+@media screen and (min-width: variables.$breakpoint-medium) {
+  .contact {
+    &__title {
+      font-size: 4vw;
+    }
+
+    &__subhead {
+      font-size: 1vw;
+    }
+
+    &__content {
+      flex-direction: row;
+      justify-content: space-between;
+
+      &__image{
+        width:55%;
+      }
+
+      &__form {
+        width: 45%;
+        padding-left: 6em;
+      }
+    }
+  }
+}

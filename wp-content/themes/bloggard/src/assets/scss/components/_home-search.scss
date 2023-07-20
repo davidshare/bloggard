@@ -1,0 +1,45 @@
+@use '../settings/_variables'as variables;
+
+.search-form {
+  position: relative;
+  max-width: 80%;
+  margin: 0 auto;
+
+  @media screen and (min-width: 800px) {
+    margin: 0;
+  }
+}
+
+.search-input {
+  width: 100%;
+  padding: 30px 30px;
+  border-radius: 50px; /* Give the input rounded corners */
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+.search-button {
+  position: absolute; 
+  right: 15px; /* Give some space from the right side of the input */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Center vertically */
+  height: 50px; /* Define the height and width of the button */
+  width: 50px; /* Define the height and width of the button */
+  border: none;
+  background-color: transparent; /* Make the button's background transparent */
+  border-radius: 50%; /* Make the button circular */
+  cursor: pointer; /* Change cursor to pointer when over the button */
+  padding: 5px; /* Remove padding */
+  background: variables.$color-dark-blue3; /* Updated color */
+
+  &:hover {
+    background: variables.$color-blue2; /* Change to a darker shade of your color for a hover effect */
+  }
+}
+
+.search-button img {
+  height: 80%; /* Let the image take full height of the button */
+  width: auto; /* Let the width adjust automatically to maintain the aspect ratio */
+  fill: variables.$color-white; /* Updated color */
+  
+}

@@ -1,0 +1,54 @@
+@use '../settings/_variables'as variables;
+
+.pagination{
+  background-color: variables.$color-white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  flex-direction: column;
+
+  a{
+    padding: 1rem 1.3rem;
+    background-color: variables.$color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-size: 1em;
+    font-weight: bold;
+
+    &:hover{
+      background-color: variables.$color-light3;
+    }
+  }
+
+  &__prev, &__next{
+    border-radius: 50px;
+  }
+
+  &__pages {
+    display: flex;
+
+    &__number{
+      border-radius: 50%;
+    }
+  }
+
+  .active{
+    background-color: variables.$color-dark-blue3;
+    color: variables.$color-white;
+
+    &:hover{
+      background-color: variables.$color-dark-blue3;
+    }
+  }
+
+  @media screen and (min-width: 400px) {
+    flex-direction: row;
+    align-items: center;
+    padding: 2rem 0;
+  }    
+}

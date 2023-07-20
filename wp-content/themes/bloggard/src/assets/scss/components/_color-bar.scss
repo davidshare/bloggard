@@ -1,0 +1,41 @@
+@use '../settings/_variables'as variables;
+
+.header {
+  &__color-bar {
+    position: fixed;
+    z-index: 500;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+    &>.color-bar {
+      &__box {
+        height: 20px;
+      }
+
+      &__green {
+        background: variables.$green-gradient;
+      }
+
+      &__blue {
+        background: variables.$blue-gradient;
+      }
+
+      &__dark-blue {
+        background: variables.$dark-blue-gradient;
+      }
+
+      &__orange {
+        background: variables.$orange-gradient;
+      }
+
+      &__red {
+        background: variables.$red-gradient;
+      }
+
+      &__purple {
+        background: variables.$purple-gradient;
+      }
+    }
+  }
+}

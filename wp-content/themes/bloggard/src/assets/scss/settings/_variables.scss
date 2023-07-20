@@ -1,0 +1,60 @@
+// Fonts
+$font-primary: 'Open Sans', sans-serif;
+$font-secondary: 'Roboto', sans-serif;
+
+// Font Sizes
+$font-size-base: 16px;
+$font-size-h1: 36px;
+$font-size-h2: 30px;
+$font-size-h3: 24px;
+$font-size-h4: 20px;
+
+// Colors
+$color-primary: #007bff;
+$color-secondary: #6c757d;
+$color-success: #28a745;
+$color-danger: #dc3545;
+$color-warning: #ffc107;
+$color-info: #17a2b8;
+$color-light: #f8f9fa;
+$color-light2: #F7F6F9;
+$color-light3: #abb8c3;
+$color-dark: #343a40;
+$color-dark2: #333333;
+$color-dark3: #444444;
+$color-white: #ffffff;
+$color-black: #000000;
+$color-green: #7FE270;
+$color-green2: #6ABC51;
+$color-blue: #2288EB;
+$color-blue2: #1E61EB;
+$color-dark-blue: #5260E1;
+$color-dark-blue2: #473C8E;
+$color-dark-blue3: #003166;
+$color-yellow: #FFFF00;
+$color-red: #E64E38;
+$color-red2: #B73B19;
+$color-orange: #F5B709;
+$color-orange2: #E96E13;
+$color-purple: #DB5889;
+$color-purple2: #813560;
+
+// Gradients
+$green-gradient: linear-gradient(to bottom, #7FE270, #6ABC51);
+$blue-gradient: linear-gradient(to bottom, #2288EB, #1E61EB);
+$dark-blue-gradient: linear-gradient(to bottom, #5260E1, #473C8E);
+$orange-gradient: linear-gradient(to bottom, #F5B709, #E96E13);
+$red-gradient: linear-gradient(to bottom, #E64E38, #B73B19);
+$purple-gradient: linear-gradient(to bottom, #DB5889, #813560);
+
+// Spacing
+$spacing-small: 10px;
+$spacing-medium: 20px;
+$spacing-large: 30px;
+$spacing-xlarge: 40px;
+
+// Breakpoints
+$breakpoint-small: 576px;
+$breakpoint-medium: 800px;
+$breakpoint-large: 992px;
+$breakpoint-xlarge: 1200px;

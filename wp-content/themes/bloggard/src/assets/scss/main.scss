@@ -1,0 +1,40 @@
+// main.scss
+
+//Settings
+@use 'settings/variables';
+@use 'settings/maps';
+
+//Tools
+@use 'tools/mixins';
+
+//Generic
+@use 'generic/reset';
+
+//Elements
+@use 'elements/elements';
+
+//Objects
+@use 'objects/grid';
+@use 'objects/media';
+
+//Components
+@use 'components/container';
+@use 'components/header';
+@use 'components/color-bar';
+@use 'components/navbar';
+@use 'components/hero';
+@use 'components/home-search';
+@use 'components/about-us-home';
+@use 'components/why-choose-us';
+@use 'components/contact';
+@use 'components/footer';
+@use 'components/featured';
+@use 'components/posts';
+@use 'components/buttons';
+@use 'components/pagination';
+@use 'components/cards';
+@use 'components/modal';
+
+//Utilities
+@use 'utilities/utilities';
+@use 'utilities/screen-reader';
